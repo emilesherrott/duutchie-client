@@ -1,0 +1,11 @@
+{
+  "name": "duutchie-client",
+  "version": "1.0.0",
+  "description": "Recipe tools for African/Carribean cuisine ",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "emilesherrott",
+  "license": "ISC"
+}
