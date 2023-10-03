@@ -1,8 +1,19 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+
+import { NavBar } from './layout'
+import { Home, AboutUs } from './pages'
+
+import './App.css'
 
 const App = () => {
   return (
-    <div>Duutchie</div>
+    <Routes>
+        <Route path="/" element={<NavBar />}>
+            <Route index element={<Home />}/>
+            <Route path="/about-us" element={<AboutUs />}/>
+        </Route>
+    </Routes>
   )
 }
 

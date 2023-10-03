@@ -1,0 +1,14 @@
+header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #111;
+}
+
+nav {
+    display: flex;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.navbar-navlink {
+    margin-right: 10px;
+    text-decoration: none;
+}
