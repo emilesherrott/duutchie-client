@@ -5,12 +5,13 @@ header {
 
 nav {
     display: flex;
-    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-navlink {
     margin-right: 10px;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
 }
 
 .navbar-navlink:visited {

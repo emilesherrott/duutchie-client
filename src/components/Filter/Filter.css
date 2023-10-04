@@ -1,0 +1,12 @@
+#filter-form {
+    width: 60vw;
+    background-color: #F1F1F1;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+
+section[id^="filter-section"] {
+    margin-bottom: 10px;
+}

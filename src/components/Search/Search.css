@@ -6,4 +6,5 @@
 #search-input::placeholder {
     color: #444;
     font-family: 'Roboto', sans-serif;
+    font-size: small;
 }
