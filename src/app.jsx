@@ -5,7 +5,7 @@ import { NavBar } from './layout'
 import { Home, AboutUs } from './pages'
 
 import './App.css'
-
+console.log("hit app.jsx")
 const App = () => {
   return (
     <Routes>
