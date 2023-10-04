@@ -9,12 +9,15 @@ console.log("hit app.jsx")
 
 const App = () => {
   return (
+    <>
+    <h1>Hello World</h1>
     <Routes>
         <Route path="/" element={<NavBar />}>
             <Route index element={<Home />}/>
             <Route path="/about-us" element={<AboutUs />}/>
         </Route>
     </Routes>
+    </>
   )
 }
 

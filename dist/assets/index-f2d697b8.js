@@ -8978,10 +8978,13 @@ const AboutUs = () => {
 const App$1 = "";
 console.log("hit app.jsx");
 const App = () => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Routes, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(NavBar, {}), children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { index: true, element: /* @__PURE__ */ jsxRuntimeExports.jsx(Home, {}) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/about-us", element: /* @__PURE__ */ jsxRuntimeExports.jsx(AboutUs, {}) })
-  ] }) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { children: "Hello World" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Routes, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(NavBar, {}), children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { index: true, element: /* @__PURE__ */ jsxRuntimeExports.jsx(Home, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/about-us", element: /* @__PURE__ */ jsxRuntimeExports.jsx(AboutUs, {}) })
+    ] }) })
+  ] });
 };
 const root = createRoot(document.getElementById("root"));
 console.log("hit index.jsx");
