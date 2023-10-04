@@ -5,10 +5,18 @@ header {
 
 nav {
     display: flex;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-navlink {
     margin-right: 10px;
     text-decoration: none;
+}
+
+.navbar-navlink:visited {
+    color: #111;
+}
+
+.active {
+    color: #FFACAC !important;
 }
