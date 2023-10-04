@@ -6,7 +6,7 @@ export default defineConfig(({ command }) => {
   if (command === "build") {
     return {
       plugins: [react()],
-      base: "/duutchie-client/",
+      base: "./",
       optimizeDeps: {
         treeshake: false
       },
