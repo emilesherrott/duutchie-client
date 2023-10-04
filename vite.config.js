@@ -6,19 +6,14 @@ export default defineConfig(({ command }) => {
   if (command === "build") {
     return {
       plugins: [react()],
-      base: "./",
-      optimizeDeps: {
-        treeshake: false
-      },
-      sourcemap: true,
-      build: {
-        minify: false,
-
-      }
+      base: "./"
     };
   } else {
     return {
       plugins: [react()],
+      test: {
+        environment: 'jsdom'
+      }
     };
   }
 });

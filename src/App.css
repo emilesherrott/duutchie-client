@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,6 +8,5 @@ main {
     padding: 10px;
 }
 
-h1, h2 {
-    font-family: 'Abril Fatface', cursive;
-}
+
+
