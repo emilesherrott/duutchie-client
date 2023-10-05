@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { Search, Filter } from "../../components";
+import { Search, filter } from "../../components";
 
 import "./Home.css";
 import "../pages.css";
@@ -7,22 +7,36 @@ import "../pages.css";
 const Home = () => {
   const [search, setSearch] = useState();
   const [filterToggle, setFilterToggle] = useState(false);
-  const [filterObject, setFilterObject] = useState({
-      carribean: false,
-      latin_american: false,
-      southern_states: false,
-      west_african: false,
-      east_african: false,
-      central_african: false,
-      south_african: false,
-      region_all: true
+  const [regionFilterObject, setRegionFilterObject] = useState({
+    carribean: false,
+    latin_american: false,
+    southern_states: false,
+    west_african: false,
+    east_african: false,
+    central_african: false,
+    south_african: false,
+    region_all: true,
   });
+
+  const [mealFilterObject, setMealFilterObject] = useState({
+    breakfast: false,
+    lunch: false,
+    dinner: false,
+    snacks: false,
+    drinks: false,
+    meal_all: true
+  })
+
+  const [prepTimeFilterObject, setPrepTimeFilterObject] = useState({
+    "0-20": false,
+    "21-40": false,
+    "41+": false,
+    "prep-time-all": true
+  })
 
   const handleClick = () => {
     setFilterToggle((prevState) => !prevState);
   };
-
-  console.log(filterObject)
 
   return (
     <div className="home-container">
@@ -33,9 +47,11 @@ const Home = () => {
           Filter
         </div>
         {filterToggle ? (
-          <>
-            <Filter filterObject={filterObject} setFilterObject={setFilterObject}/>
-          </>
+          <section id="filter">
+            <filter.RegionFilter regionFilterObject={regionFilterObject} setRegionFilterObject={setRegionFilterObject} />
+            <filter.MealFilter mealFilterObject={mealFilterObject} setMealFilterObject={setMealFilterObject} />
+            <filter.PrepTimeFilter prepTimeFilterObject={prepTimeFilterObject} setPrepTimeFilterObject={setPrepTimeFilterObject} />
+          </section>
         ) : (
           <></>
         )}

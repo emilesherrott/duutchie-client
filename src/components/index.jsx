@@ -1,2 +1,2 @@
-export { default as Filter } from "./Filter"
+export * as filter from "./filter"
 export { default as Search } from "./Search" 
