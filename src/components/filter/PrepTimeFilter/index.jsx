@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./PrepTimeFilter.css";
+import "../filter.css"
+
 const PrepTimeFilter = ({ prepTimeFilterObject, setPrepTimeFilterObject }) => {
   const handleChange = (e) => {
     if (prepTimeFilterObject["prep-time-all"] && e.target.value !== "prep-time-all") {

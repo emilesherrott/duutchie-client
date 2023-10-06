@@ -7,6 +7,12 @@ import "../pages.css";
 const Home = () => {
   const [search, setSearch] = useState();
   const [filterToggle, setFilterToggle] = useState(false);
+
+  const handleClick = () => {
+    setFilterToggle((prevState) => !prevState);
+  };
+
+  
   const [regionFilterObject, setRegionFilterObject] = useState({
     carribean: false,
     latin_american: false,
@@ -34,9 +40,12 @@ const Home = () => {
     "prep-time-all": true
   })
 
-  const handleClick = () => {
-    setFilterToggle((prevState) => !prevState);
-  };
+  const [cookTimeFilterObject, setCookTimeFilterObject] = useState({
+    "0-40": false,
+    "41-80": false,
+    "81+": false, 
+    "cook-time-all": true
+  })
 
   return (
     <div className="home-container">
@@ -51,6 +60,7 @@ const Home = () => {
             <filter.RegionFilter regionFilterObject={regionFilterObject} setRegionFilterObject={setRegionFilterObject} />
             <filter.MealFilter mealFilterObject={mealFilterObject} setMealFilterObject={setMealFilterObject} />
             <filter.PrepTimeFilter prepTimeFilterObject={prepTimeFilterObject} setPrepTimeFilterObject={setPrepTimeFilterObject} />
+            <filter.CookTimeFilter cookTimeFilterObject={cookTimeFilterObject} setCookTimeFilterObject={setCookTimeFilterObject} />
           </section>
         ) : (
           <></>
