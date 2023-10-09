@@ -66,7 +66,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
     <form className="filter-form">
       <div>Region</div>
       <section id="filter-section-region">
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-carribean">Carribean</label>
           <input
             id="filter-carribean"
@@ -77,7 +77,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
             checked={regionFilterObject["carribean"]}
           />
         </article>
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-latin_american">Latin American</label>
           <input
             id="filter-latin_american"
@@ -89,7 +89,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
           />
         </article>
 
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-southern_state">Southern States</label>
           <input
             id="filter-southern_state"
@@ -101,7 +101,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
           />
         </article>
 
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-west_african">West African</label>
           <input
             id="filter-west_african"
@@ -113,7 +113,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
           />
         </article>
 
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-east_african">East African</label>
           <input
             id="filter-east_african"
@@ -125,7 +125,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
           />
         </article>
 
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-central_african">Central African</label>
           <input
             id="filter-central_african"
@@ -137,7 +137,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
           />
         </article>
 
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-south_african">South African</label>
           <input
             id="filter-south_african"
@@ -149,7 +149,7 @@ const RegionFilter = ({ regionFilterObject, setRegionFilterObject }) => {
           />
         </article>
 
-        <article className="filter-labe-input-pair">
+        <article className="filter-label-input-pair">
           <label htmlFor="filter-region_all">All</label>
           <input
             id="filter-region_all"
