@@ -1,4 +1,16 @@
-.aboutus-head-section {
+.aboutus-container {
     display: flex;
     justify-content: center;
+}
+
+.aboutus-head-section {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
 }

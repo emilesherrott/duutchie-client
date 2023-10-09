@@ -9,4 +9,18 @@
 
 section[id^="filter-section"] {
     margin-bottom: 10px;
+    display: flex;
+}
+
+.filter-label-input-pair {
+    display: flex;
+    align-items: center;
+}
+
+label[htmlFor="filter"] {
+    margin-right: 5px;
+}
+
+input[id^="filter"] {
+    margin-right: 10px;
 }

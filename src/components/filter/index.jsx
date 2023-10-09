@@ -1,3 +1,5 @@
 export { default as RegionFilter } from "./RegionFilter"
 export { default as MealFilter } from "./MealFilter"
 export { default as PrepTimeFilter } from "./PrepTimeFilter"
+export { default as CostFilter } from "./CostFilter"
+export { default as DietryFilter } from "./DietryFilter" 
