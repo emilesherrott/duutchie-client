@@ -12,6 +12,7 @@ const Home = () => {
     setFilterToggle((prevState) => !prevState);
   };
 
+  
   const [regionFilterObject, setRegionFilterObject] = useState({
     carribean: false,
     latin_american: false,
@@ -54,6 +55,12 @@ const Home = () => {
 
   })
 
+  const [cookTimeFilterObject, setCookTimeFilterObject] = useState({
+    "0-40": false,
+    "41-80": false,
+    "81+": false, 
+    "cook-time-all": true
+  })
 
   return (
     <div className="home-container">
@@ -68,6 +75,7 @@ const Home = () => {
             <filter.RegionFilter regionFilterObject={regionFilterObject} setRegionFilterObject={setRegionFilterObject} />
             <filter.MealFilter mealFilterObject={mealFilterObject} setMealFilterObject={setMealFilterObject} />
             <filter.PrepTimeFilter prepTimeFilterObject={prepTimeFilterObject} setPrepTimeFilterObject={setPrepTimeFilterObject} />
+            <filter.CookTimeFilter cookTimeFilterObject={cookTimeFilterObject} setCookTimeFilterObject={setCookTimeFilterObject} />
             <filter.CostFilter costFilterObject={costFilterObject} setCostFilterObject={setCostFilterObject} />
             <filter.DietryFilter dietryFilterObject={dietryFilterObject} setDietryFilterObject={setDietryFilterObject} />
           </section>

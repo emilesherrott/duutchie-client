@@ -2,6 +2,7 @@ import React from "react";
 
 import "./PrepTimeFilter.css";
 import "../filter.css";
+import "../filter.css"
 
 const PrepTimeFilter = ({ prepTimeFilterObject, setPrepTimeFilterObject }) => {
   const handleChange = (e) => {
