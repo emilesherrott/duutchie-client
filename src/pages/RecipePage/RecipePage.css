@@ -1,0 +1,52 @@
+.recipe-page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-page-subcontainer {
+  width: 60vw;
+}
+
+.recipe-page-description h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: xx-large;
+}
+
+.recipe-page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recipe-page-info {
+    margin: 0px 0px 0px 20px;
+}
+
+.recipe-page-description p, li {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
+
+.recipe-page-image-and-ingredients {
+    display: flex;
+}
+
+.recipe-page-image-section {
+    max-width: 50%;
+}
+
+.recipe-page-image {
+    max-width: 100%;
+}
+
+.recipe-page-ingredients-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 20px;
+
+}
+
+.recipe-page-ingredients-section > h2 {
+    font-family: "Abril Fatface", cursive;
+    font-size: x-large;
+}

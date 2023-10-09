@@ -1,5 +1,9 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
+import axios from "axios"
+
 import { Search, filter } from "../../components";
+import { Recipes } from "../../layout";
+
 
 import "./Home.css";
 import "../pages.css";
@@ -62,6 +66,17 @@ const Home = () => {
     "cook-time-all": true
   })
 
+  const [recipeData, setRecipeData] = useState([])
+
+  useEffect(() => {
+      const fetchRecipes = async () => {
+        const { data } = await axios.get("http://localhost:3000/")
+        data.success ? setRecipeData(data.recipes) : setRecipeData([])
+      }
+      fetchRecipes()
+  }, [])
+
+
   return (
     <div className="home-container">
       <section className="home-head-section">
@@ -82,6 +97,9 @@ const Home = () => {
         ) : (
           <></>
         )}
+        <section id="home-recipies">
+          <Recipes recipeData={recipeData} />
+        </section>
       </section>
     </div>
   );
