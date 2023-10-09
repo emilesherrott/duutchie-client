@@ -14,7 +14,7 @@ const RecipePage = () => {
   useEffect(() => {
     console.log("hit");
     const fetchRecipe = async () => {
-      const { data } = await axios.get(`http://localhost:3000/${uriName}`);
+      const { data } = await axios.get(`http://35.178.184.84:3000/${uriName}`);
       data.success ? setRecipe(data.recipe) : setRecipe();
     };
     fetchRecipe();

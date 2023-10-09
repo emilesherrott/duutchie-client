@@ -70,7 +70,7 @@ const Home = () => {
 
   useEffect(() => {
       const fetchRecipes = async () => {
-        const { data } = await axios.get("http://localhost:3000/")
+        const { data } = await axios.get("http://35.178.184.84:3000/")
         data.success ? setRecipeData(data.recipes) : setRecipeData([])
       }
       fetchRecipes()
